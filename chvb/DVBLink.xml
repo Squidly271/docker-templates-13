@@ -1,51 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Beta>False</Beta>
-  <Category>Network:Web</Category>
+<Beta>False</Beta>
+<Category>Network:DVB</Category>
+<Date>2016-05-30</Date>
   <Name>DVBLink</Name>
-  <Description>
-    DVBLink DVB Server[br][br]
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : Config dir[br]
+  <Support>-</Support>
+  <Overview>DVBLink is a DVB Server Software</Overview>
+  <Changes>[font size=4]DVBLink 5.5[/font][/center]
+[b]30.05.2016:[/b] Initial Release</Changes>
+  <Description>DVBLink is a DVB Server Software, but running on Linux.[br]
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]Port 39876:[/b] Administrative Configuration [br]
+  [b]Port 222:[/b] SSH Server Port Login with User:docker / Passwort:test123 [br]
   </Description>
-  <Registry>https://hub.docker.com/r/chvb/docker-DVBLink/</Registry>
+  <Project>http://dvblogic.com</Project>
+  <Registry>https://hub.docker.com/r/chvb/docker-dvblink/</Registry>
   <Repository>chvb/docker-dvblink</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Environment>
+  </Environment>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>39876</HostPort>
-        <ContainerPort>39876</ContainerPort>
+        <HostPort>33987</HostPort>
+        <ContainerPort>33987</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>223/HostPort>
+        <HostPort>2222</HostPort>
         <ContainerPort>22</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name></Name>
-      <Value></Value>
-    </Variable>
-  </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/disks/SSD/appdata/DVBLink/</HostDir>
+      <HostDir>/mnt/user/appdata/DVBLink</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/etc/localtime</HostDir>
-      <ContainerDir>/etc/localtime</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:39876]/</WebUI>
+  <Version>1.0</Version>
+  <WebUI>https://[IP]:[PORT:39876]/</WebUI>
   <Banner>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/dvblink.jpg</Banner>
   <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/dvblink.jpg</Icon>
+  <ExtraParams></ExtraParams>
 </Container>
