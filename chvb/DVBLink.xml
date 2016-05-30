@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Network:DVB</Category>
+  <Name>DVBLink</Name>
+  <Description>
+    DVBLink DVB Server[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : Config dir[br]
+
+
+  </Description>
+  <Registry>https://hub.docker.com/r/chvb/docker-DVBLink/</Registry>
+  <Repository>chvb/docker-dvblink</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>39876</HostPort>
+        <ContainerPort>39876</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>2222/HostPort>
+        <ContainerPort>22</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disks/SSD/appdata/DVBLink/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:39876]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/dvblink.jpg</Banner>
+  <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/dvblink.jpg</Icon>
+</Container>
