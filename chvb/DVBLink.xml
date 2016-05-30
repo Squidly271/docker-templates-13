@@ -21,7 +21,7 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>2222/HostPort>
+        <HostPort>223/HostPort>
         <ContainerPort>22</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
