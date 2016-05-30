@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Beta>False</Beta>
-  <Category>Network:DVB</Category>
+  <Category>Network:Web</Category>
   <Name>DVBLink</Name>
   <Description>
     DVBLink DVB Server[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/config[/b] : Config dir[br]
-
-
   </Description>
   <Registry>https://hub.docker.com/r/chvb/docker-DVBLink/</Registry>
   <Repository>chvb/docker-dvblink</Repository>
