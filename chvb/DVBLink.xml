@@ -11,7 +11,7 @@
   <Description>DVBLink is a DVB Server Software, but running on Linux.[br]
   [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
   [b]Port 39876:[/b] Administrative Configuration [br]
-  [b]Port 222:[/b] SSH Server Port Login with User:docker / Passwort:test123 [br]
+  [b]Port 2222:[/b] SSH Server Port Login with User:docker / Passwort:test123 [br]
   </Description>
   <Project>http://dvblogic.com</Project>
   <Registry>https://hub.docker.com/r/chvb/docker-dvblink/</Registry>
