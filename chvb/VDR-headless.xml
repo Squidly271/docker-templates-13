@@ -28,6 +28,11 @@
         <ContainerPort>2004</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+        <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
       <Port>
         <HostPort>4010-4020</HostPort>
         <ContainerPort>4010-4020</ContainerPort>
@@ -39,8 +44,14 @@
         <Protocol>tcp</Protocol>
       </Port>
         <Port>
-        <HostPort>3306</HostPort>
+        <HostPort>3307</HostPort>
         <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+        </Port>
+        <Port>
+        <HostPort>34890</HostPort>
+        <ContainerPort>34890</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -59,6 +70,11 @@
       <Volume>
       <HostDir>/mnt/user/Aufnahmen/</HostDir>
       <ContainerDir>/recordings</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+      <Volume>
+      <HostDir>/mnt/user/appdata/VDR/cache</HostDir>
+      <ContainerDir>/vdr/cache</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
