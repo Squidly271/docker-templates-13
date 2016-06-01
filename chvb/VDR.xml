@@ -14,8 +14,8 @@
   [b]Port 2222:[/b] SSH Server Port Login with User:docker / Passwort:test123 [br]
   </Description>
   <Project>http://tvdr.de/</Project>
-  <Registry>https://hub.docker.com/r/chriszero/vdr-epgd/</Registry>
-  <Repository>chriszero/vdr-epgd</Repository>
+  <Registry>https://hub.docker.com/r/chriszero/vdr-headless/</Registry>
+  <Repository>chriszero/vdr-headless</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
