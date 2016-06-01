@@ -78,7 +78,7 @@
     </Volume>
   </Data>
   <Version>1.0</Version>
-  <WebUI>https://[IP]:[PORT:8001]/</WebUI>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <Banner>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/VDR.jpg</Banner>
   <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/VDR.jpg</Icon>
   <ExtraParams></ExtraParams>
