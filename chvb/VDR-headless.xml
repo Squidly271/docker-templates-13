@@ -24,6 +24,11 @@
     <Mode>bridge</Mode>
     <Publish>
         <Port>
+        <HostPort>2000</HostPort>
+        <ContainerPort>2000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+        <Port>
         <HostPort>2004</HostPort>
         <ContainerPort>2004</ContainerPort>
         <Protocol>tcp</Protocol>
