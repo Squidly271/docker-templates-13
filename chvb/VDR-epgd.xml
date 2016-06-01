@@ -33,6 +33,11 @@
         <ContainerPort>9999</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+        <Port>
+        <HostPort>3307</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data>
