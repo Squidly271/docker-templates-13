@@ -38,6 +38,11 @@
         <ContainerPort>6419</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+        <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data>
