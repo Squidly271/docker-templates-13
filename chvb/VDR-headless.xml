@@ -21,33 +21,8 @@
   <Environment>
   </Environment>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
-      <Port>
-        <HostPort>2004</HostPort>
-        <ContainerPort>2004</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-        <Port>
-        <HostPort>3000</HostPort>
-        <ContainerPort>3000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>4010-4020</HostPort>
-        <ContainerPort>4010-4020</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-        <Port>
-        <HostPort>6419</HostPort>
-        <ContainerPort>6419</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-        <Port>
-        <HostPort>34890</HostPort>
-        <ContainerPort>34890</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Data>
