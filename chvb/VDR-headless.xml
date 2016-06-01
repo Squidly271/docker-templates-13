@@ -57,12 +57,12 @@
       <Mode>rw</Mode>
     </Volume>
       <Volume>
-      <HostDir>/mnt/user/appdata/VDR/etcvdr/</HostDir>
+      <HostDir>/mnt/user/appdata/VDR/etcvdr</HostDir>
       <ContainerDir>/etc/vdr</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
       <Volume>
-      <HostDir>/mnt/user/Aufnahmen/</HostDir>
+      <HostDir>/mnt/user/Aufnahmen</HostDir>
       <ContainerDir>/recordings</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
