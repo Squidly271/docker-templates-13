@@ -44,12 +44,6 @@
         <Protocol>tcp</Protocol>
       </Port>
         <Port>
-        <HostPort>3307</HostPort>
-        <ContainerPort>3306</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-        </Port>
-        <Port>
         <HostPort>34890</HostPort>
         <ContainerPort>34890</ContainerPort>
         <Protocol>tcp</Protocol>
@@ -58,12 +52,12 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/VDR/config</HostDir>
+      <HostDir>/mnt/user/appdata/VDR/vdrconfig</HostDir>
       <ContainerDir>/vdr/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
       <Volume>
-      <HostDir>/mnt/user/appdata/VDR/etc/</HostDir>
+      <HostDir>/mnt/user/appdata/VDR/etcvdr/</HostDir>
       <ContainerDir>/etc/vdr</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -75,6 +69,11 @@
       <Volume>
       <HostDir>/mnt/user/appdata/VDR/cache</HostDir>
       <ContainerDir>/vdr/cache</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+      <Volume>
+      <HostDir>/mnt/user/appdata/VDR/epgd</HostDir>
+      <ContainerDir>/epgd/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
