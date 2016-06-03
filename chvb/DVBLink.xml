@@ -13,6 +13,8 @@
   [b]Port 39876:[/b] Administrative Configuration [br]
   [b]Port 8100:[/b] DVBLink Streaming Port [br]
   [b]Port 2222:[/b] SSH Server Port Login with User:docker / Passwort:test123 [br]
+  [b]/recordings:[/b]record from DVBLink to your UNRAID share [br]
+  [b]/backup:[/b]backup/restore your Settings from DVBLink to your UNRAID share [br]
   </Description>
   <Project>http://dvblogic.com</Project>
   <Registry>https://hub.docker.com/r/chvb/docker-dvblink/</Registry>
@@ -43,8 +45,8 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/DVBLink</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user/appdata/DVBLink/backup</HostDir>
+      <ContainerDir>/backup</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
       <Volume>
