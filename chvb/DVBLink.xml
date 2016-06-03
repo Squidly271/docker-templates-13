@@ -28,6 +28,11 @@
         <ContainerPort>39876</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+        <Port>
+        <HostPort>8100</HostPort>
+        <ContainerPort>8100</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
       <Port>
         <HostPort>2222</HostPort>
         <ContainerPort>22</ContainerPort>
