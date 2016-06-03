@@ -48,7 +48,7 @@
     </Volume>
   </Data>
   <Version>1.0</Version>
-  <WebUI>https://[IP]:[PORT:39876]/</WebUI>
+  <WebUI>http://[IP]:[PORT:39876]/</WebUI>
   <Banner>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/dvblink.jpg</Banner>
   <Icon>https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/dvblink.jpg</Icon>
   <ExtraParams></ExtraParams>
