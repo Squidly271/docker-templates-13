@@ -47,6 +47,11 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+      <Volume>
+      <HostDir>/mnt/user/Recordings</HostDir>
+      <ContainerDir>/recordings</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Version>1.0</Version>
   <WebUI>http://[IP]:[PORT:39876]/</WebUI>
