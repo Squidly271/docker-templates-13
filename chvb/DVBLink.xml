@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
 <Beta>False</Beta>
-<Category>Network:DVB</Category>
+<Category>MediaServer:Video</Category>
 <Date>2016-06-05</Date>
   <Name>DVBLink</Name>
   <Support>-</Support>
