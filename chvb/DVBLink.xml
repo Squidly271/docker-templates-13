@@ -55,7 +55,6 @@
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-      </Volume>
       <Volume>
       <HostDir>/mnt/user/appdata/DVBLink/logs</HostDir>
       <ContainerDir>/logs</ContainerDir>
