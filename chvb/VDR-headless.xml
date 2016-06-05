@@ -4,7 +4,7 @@
 <Category>Network:DVB</Category>
 <Date>2016-06-01</Date>
   <Name>VDR</Name>
-  <Support>-</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=49578.0</Support>
   <Overview>VDR is a DVB Server Software</Overview>
   <Changes>[font size=4]VDR 2.2[/font][/center]
 [b]01.06.2016:[/b] Initial Release</Changes>
