@@ -14,8 +14,6 @@
   [b]Port 8100:[/b] DVBLink Streaming Port [br]
   [b]Port 2222:[/b] SSH Server Port Login with User:docker / Passwort:test123 [br]
   [b]/recordings:[/b]record from DVBLink to your UNRAID share [br]
-  [b]/config:[/b]Configuration Files [br]
-  [b]/logs:[/b]Log Files [br]
   </Description>
   <Project>http://dvblogic.com</Project>
   <Registry>https://hub.docker.com/r/chvb/docker-dvblink/</Registry>
@@ -48,16 +46,6 @@
       <Volume>
       <HostDir>/mnt/user/Recordings</HostDir>
       <ContainerDir>/recordings</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-      <Volume>
-      <HostDir>/mnt/user/appdata/DVBLink/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-      <Volume>
-      <HostDir>/mnt/user/appdata/DVBLink/logs</HostDir>
-      <ContainerDir>/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
